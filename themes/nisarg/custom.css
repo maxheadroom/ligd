@@ -1,5 +1,5 @@
 .main-navigation .primary-menu > li > a:hover, .main-navigation .primary-menu > li > a:focus {
-	color: rgb(198,105,60);
+	color: rgb(195,105,60);
 }
 #secondary .widget-title::after {
 	position: absolute;
@@ -7,20 +7,20 @@
 	display: block;
 	height: 4px;
 	bottom: -15px;
-	background-color: rgb(39,64,29);
+	background-color: rgb(88,109,44);
 	content: "";
 }
 
 #secondary .widget a:hover, #secondary .widget a:focus {
-	color: rgb(198,105,60);
+	color: rgb(195,105,60);
 }
 
 .main-navigation .primary-menu > .current_page_item > a, .main-navigation .primary-menu > .current_page_item > a:hover, .main-navigation .primary-menu > .current_page_item > a:focus, .main-navigation .primary-menu > .current-menu-item > a, .main-navigation .primary-menu > .current-menu-item > a:hover, .main-navigation .primary-menu > .current-menu-item > a:focus, .main-navigation .primary-menu > .current_page_ancestor > a, .main-navigation .primary-menu > .current_page_ancestor > a:hover, .main-navigation .primary-menu > .current_page_ancestor > a:focus, .main-navigation .primary-menu > .current-menu-ancestor > a, .main-navigation .primary-menu > .current-menu-ancestor > a:hover, .main-navigation .primary-menu > .current-menu-ancestor > a:focus  {
-	border-top: 4px solid rgb(198,105,60);
-	color: rgb(198,105,60);
+	border-top: 4px solid rgb(195,105,60);
+	color: rgb(195,105,60);
 }
 
-h1, h2, h3, h4 {color: rgb(39,64,29)};
+h1, h2, h3, h4 {color: rgb(88,109,44)};
 
 #secondary .widget-title::after {
 	position: absolute;
@@ -28,6 +28,6 @@ h1, h2, h3, h4 {color: rgb(39,64,29)};
 	display: block;
 	height: 4px;
 	bottom: -15px;
-	background-color: rgb(39,64,29);
+	background-color: rgb(88,109,44));
 	content: "";
 }
