@@ -1,3 +1,4 @@
+/* Color Scheme 4 */
 .main-navigation .primary-menu > li > a:hover, .main-navigation .primary-menu > li > a:focus {
 	color: rgb(198,105,60);
 }
@@ -31,3 +32,14 @@ h1, h2, h3, h4 {color: rgb(39,64,29)};
 	background-color: rgb(39,64,29);
 	content: "";
 }
+
+.site-title {
+	color: #fff;
+	font-size: 2.5em;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-shadow: rgba(255,255,255,.1) -1px -1px 1px,rgba(0,0,0,.5) 1px 1px 1px;
+};
