@@ -1846,6 +1846,54 @@ img.wp-post-image{
 
 
 
+/* Color Scheme 1 */
+
+.main-navigation .primary-menu > li > a:hover, .main-navigation .primary-menu > li > a:focus {
+	color: rgb(195,105,60);
+}
+#secondary .widget-title::after {
+	position: absolute;
+	width: 50px;
+	display: block;
+	height: 4px;
+	bottom: -15px;
+	background-color: rgb(88,109,44);
+	content: "";
+}
+
+#secondary .widget a:hover, #secondary .widget a:focus {
+	color: rgb(195,105,60);
+}
+
+.main-navigation .primary-menu > .current_page_item > a, .main-navigation .primary-menu > .current_page_item > a:hover, .main-navigation .primary-menu > .current_page_item > a:focus, .main-navigation .primary-menu > .current-menu-item > a, .main-navigation .primary-menu > .current-menu-item > a:hover, .main-navigation .primary-menu > .current-menu-item > a:focus, .main-navigation .primary-menu > .current_page_ancestor > a, .main-navigation .primary-menu > .current_page_ancestor > a:hover, .main-navigation .primary-menu > .current_page_ancestor > a:focus, .main-navigation .primary-menu > .current-menu-ancestor > a, .main-navigation .primary-menu > .current-menu-ancestor > a:hover, .main-navigation .primary-menu > .current-menu-ancestor > a:focus  {
+	border-top: 4px solid rgb(195,105,60);
+	color: rgb(195,105,60);
+}
+
+h1, h2, h3, h4 {color: rgb(88,109,44)}
+
+#secondary .widget-title::after {
+	position: absolute;
+	width: 50px;
+	display: block;
+	height: 4px;
+	bottom: -15px;
+	background-color: rgb(88,109,44);
+	content: "";
+}
+
+.site-title {
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-shadow: rgba(255,255,255,.1) -1px -1px 1px,rgba(0,0,0,.5) 1px 1px 1px;
+}
+
+
 /* make white space around entries smaller */
 .entry-header, .entry-content, .entry-summary, .entry-footer {
     padding: 0 1em;
@@ -1860,4 +1908,17 @@ p {
 h1, h2, h3, h4, h5, h6 {
     font-style: normal;
     font-size: 15px;
+}
+
+/* make entry headings use the color scheme color */ 
+.entry-header .entry-title a {
+    color:rgb(88,109,44);
+}
+
+.sticky-post {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    padding: 5px 15px;
 }
