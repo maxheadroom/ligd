@@ -19,6 +19,8 @@ This theme is licensed under the GPL.
 */
 
 
+
+
 /**
  * Table of Contents:
  *
@@ -41,6 +43,8 @@ This theme is licensed under the GPL.
  * 10.0 Gutenberg
  *     
 **/
+
+
 
 /**
  * 1.0 Reset
@@ -1896,7 +1900,7 @@ h1, h2, h3, h4 {color: rgb(88,109,44)}
 
 /* make white space around entries smaller */
 .entry-header, .entry-content, .entry-summary, .entry-footer {
-    padding: 0 1em;
+    padding: 0px 20px 0px 20px;
 }
 
 /* make white space below entries smaller */
@@ -1906,15 +1910,23 @@ p {
 
 /* make entry titles smaller */
 h1, h2, h3, h4, h5, h6 {
-    font-style: normal;
-    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
 }
 
 /* make entry headings use the color scheme color */ 
-.entry-header .entry-title a {
+.entry-header .entry-title  {
     color:rgb(88,109,44);
+    font-weight: bolder;
+    
 }
 
+.entry-header .entry-title a {
+    color:rgb(88,109,44);
+    font-weight: bolder;
+    
+}
+/* hide the sticky post marker */
 .sticky-post {
     visibility: hidden;
     position: absolute;
@@ -1922,3 +1934,15 @@ h1, h2, h3, h4, h5, h6 {
     left: 15px;
     padding: 5px 15px;
 }
+
+
+
+
+
+body, button, input, select, textarea {
+    color: #424242;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
