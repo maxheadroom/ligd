@@ -1903,6 +1903,9 @@ h1, h2, h3, h4 {color: rgb(88,109,44)}
     padding: 0px 20px 0px 20px;
 }
 
+.entry-footer {
+    padding-bottom: 20px;
+}
 /* make white space below entries smaller */
 p {
     margin-bottom: 1em;
@@ -1946,3 +1949,73 @@ body, button, input, select, textarea {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* position the featured image and make it thumbnail */ 
+
+@media (min-width: 320px) and (max-width: 359px ) {
+    .featured-image img {
+        width: 100%;
+    }
+}
+@media (min-width: 360px) and (max-width: 767px ) {
+    .featured-image img {
+        width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px ) {
+    .featured-image img {
+        width: 100%;
+    }
+}
+@media (min-width: 980px) and (max-width: 1279px ){
+    .featured-image img {
+        width: 300px;
+    }
+}
+@media (min-width: 1280px) and (max-width: 1365px ){
+    .featured-image img {
+        width: 300px;
+    }
+}
+@media (min-width: 1366px) and (max-width: 1439px ){
+    .featured-image img {
+        width: 300px;
+    }
+}
+@media (min-width: 1440px) and (max-width: 1599px ) {
+    .featured-image img {
+        width: 300px;
+    }
+}
+@media (min-width: 1600px) and (max-width: 1919px ) {
+    .featured-image img {
+        width: 300px;
+    }
+}
+@media (min-width: 1920px) and (max-width: 2559px ) {
+    .featured-image img {
+        width: 300px;
+    }
+}
+@media (min-width: 2560px)  and (max-width: 2879px ) {
+    .featured-image img {
+        width: 300px;
+    }
+}
+@media (min-width: 2880px) {
+    .featured-image img {
+        width: 500px;
+    }
+}
+
+.featured-image img {
+    border-radius: 8px;
+    padding: 0px;
+    height: auto;
+    display: flow-root;
+    margin-left: 0px;
+    margin-top: 15px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    float: left;
+
+}
