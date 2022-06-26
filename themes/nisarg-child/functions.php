@@ -38,4 +38,151 @@ if ( ! function_exists( 'nisarg_posted_on' ) ) :
         }
     }
     endif;
+
+
+    if ( ! function_exists( 'nisarg_header_style' ) ) :
+        /**
+         * Styles the header image and text displayed on the blog
+         *
+         * @see nisarg_custom_header_setup().
+         */
+        function nisarg_header_style() {
+            $header_image = get_header_image();
+            $header_text_color   = get_header_textcolor();
+            ?>
+            <style type="text/css" id="nisarg-header-css">
+            <?php
+            if ( ! empty( $header_image ) ) :
+                $header_width = get_custom_header()->width;
+                $header_height = get_custom_header()->height;
+                $header_height320 = ( $header_height / $header_width * 320 );
+                $header_height360 = ( $header_height / $header_width * 360 );
+                $header_height768 = ( $header_height / $header_width * 768 );
+                $header_height980 = ( $header_height / $header_width * 980 );
+                $header_height1280 = ( $header_height / $header_width * 1280 );
+                $header_height1366 = ( $header_height / $header_width * 1366 );
+                $header_height1440 = ( $header_height / $header_width * 1440 );
+                $header_height1600 = ( $header_height / $header_width * 1600 );
+                $header_height1920 = ( $header_height / $header_width * 1920 );
+                $header_height2560 = ( $header_height / $header_width * 2560 );
+                $header_height2880 = ( $header_height / $header_width * 2880 );
+                ?>
+                .site-header {
+                    background: linear-gradient( to top, black, transparent 90%), url(<?php header_image(); ?>) no-repeat scroll top;
+                    background-size: cover;
+                }
+
+
+                @media (min-width: 320px) and (max-width: 359px ) {
+                    .site-header {
+                        height: <?php echo absint( $header_height320 );?>px;
+                    }
+                }
+                @media (min-width: 360px) and (max-width: 767px ) {
+                    .site-header {
+                        height: <?php echo absint( $header_height360 );?>px;
+                    }
+                }
+                @media (min-width: 768px) and (max-width: 979px ) {
+                    .site-header {
+                        height: <?php echo absint( $header_height768 );?>px;
+                    }
+                }
+                @media (min-width: 980px) and (max-width: 1279px ){
+                    .site-header {
+                        height: <?php echo absint( $header_height980 );?>px;
+                    }
+                }
+                @media (min-width: 1280px) and (max-width: 1365px ){
+                    .site-header {
+                        height: <?php echo absint( $header_height1280 );?>px;
+                    }
+                }
+                @media (min-width: 1366px) and (max-width: 1439px ){
+                    .site-header {
+                        height: <?php echo absint( $header_height1366 );?>px;
+                    }
+                }
+                @media (min-width: 1440px) and (max-width: 1599px ) {
+                    .site-header {
+                        height: <?php echo absint( $header_height1440 );?>px;
+                    }
+                }
+                @media (min-width: 1600px) and (max-width: 1919px ) {
+                    .site-header {
+                        height: <?php echo absint( $header_height1600 );?>px;
+                    }
+                }
+                @media (min-width: 1920px) and (max-width: 2559px ) {
+                    .site-header {
+                        height: <?php echo absint( $header_height1920 );?>px;
+                    }
+                }
+                @media (min-width: 2560px)  and (max-width: 2879px ) {
+                    .site-header {
+                        height: <?php echo absint( $header_height2560 );?>px;
+                    }
+                }
+                @media (min-width: 2880px) {
+                    .site-header {
+                        height: <?php echo absint( $header_height2880 );?>px;
+                    }
+                }
+                .site-header{
+                    -webkit-box-shadow: 0px 0px 2px 1px rgba(182,182,182,0.3);
+                    -moz-box-shadow: 0px 0px 2px 1px rgba(182,182,182,0.3);
+                    -o-box-shadow: 0px 0px 2px 1px rgba(182,182,182,0.3);
+                    box-shadow: 0px 0px 2px 1px rgba(182,182,182,0.3);
+                }
+            <?php else : ?>
+                .site-header{
+                    -webkit-box-shadow: 0px 0px 1px 1px rgba(182,182,182,0.3);
+                    -moz-box-shadow: 0px 0px 1px 1px rgba(182,182,182,0.3);
+                    -o-box-shadow: 0px 0px 1px 1px rgba(182,182,182,0.3);
+                    box-shadow: 0px 0px 1px 1px rgba(182,182,182,0.3);
+                }
+                .site-header {
+                        height: 300px;
+                    }
+                    @media (max-width: 767px) {
+                        .site-header {
+                            height: 200px;
+                        }
+                    }
+                    @media (max-width: 359px) {
+                        .site-header {
+                            height: 150px;
+                        }
+                    }
+            <?php endif;
+            // Has the text been hidden?
+            if ( ! display_header_text() ) :
+            ?>
+                .site-title,
+                .site-description {
+                    position: absolute;
+                    clip: rect(1px 1px 1px 1px); /* IE7 */
+                    clip: rect(1px, 1px, 1px, 1px);
+                }
+            <?php
+            endif;
+            if ( empty( $header_image ) ) :
+                ?>
+                .site-header .home-link {
+                    min-height: 0;
+                }
+            <?php endif;  ?>
+                .site-title,
+                .site-description {
+                    color: #<?php echo esc_attr( $header_text_color ); ?>;
+                }
+                .site-title::after{
+                    background: #<?php echo esc_attr( $header_text_color ); ?>;
+                    content:"";
+                }
+            </style>
+            <?php
+        }
+    endif; // nisarg_header_style
+
 ?>
