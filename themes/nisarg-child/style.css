@@ -44,7 +44,14 @@ This theme is licensed under the GPL.
  *     
 **/
 
+/* Define LIGD Color Scheme "Bowlful of Oranges" color variables */
 
+:root {
+    --ligd-color-spearmint: rgb(103,130,114);
+    --ligd-color-yellowgreen: rgb(193,172,95);
+    --ligd-color-burntsienna: rgb(196,104,60);
+    --ligd-color-green: rgb(88,109,44);
+}
 
 /**
  * 1.0 Reset
@@ -70,7 +77,8 @@ textarea {
 
 h1,h2,h3,h4,h5,h6 {
     clear: both;
-    color: #212121;
+    /* color: #212121; */
+    color: var(--ligd-color-green);
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1853,7 +1861,7 @@ img.wp-post-image{
 /* Color Scheme 1 */
 
 .main-navigation .primary-menu > li > a:hover, .main-navigation .primary-menu > li > a:focus {
-	color: rgb(195,105,60);
+	color: var(--ligd-color-burntsienna);
 }
 #secondary .widget-title::after {
 	position: absolute;
@@ -1861,20 +1869,20 @@ img.wp-post-image{
 	display: block;
 	height: 4px;
 	bottom: -15px;
-	background-color: rgb(88,109,44);
+	background-color: var(--ligd-color-spearmint);
 	content: "";
 }
 
 #secondary .widget a:hover, #secondary .widget a:focus {
-	color: rgb(195,105,60);
+	color: var(--ligd-color-burntsienna);
 }
 
 .main-navigation .primary-menu > .current_page_item > a, .main-navigation .primary-menu > .current_page_item > a:hover, .main-navigation .primary-menu > .current_page_item > a:focus, .main-navigation .primary-menu > .current-menu-item > a, .main-navigation .primary-menu > .current-menu-item > a:hover, .main-navigation .primary-menu > .current-menu-item > a:focus, .main-navigation .primary-menu > .current_page_ancestor > a, .main-navigation .primary-menu > .current_page_ancestor > a:hover, .main-navigation .primary-menu > .current_page_ancestor > a:focus, .main-navigation .primary-menu > .current-menu-ancestor > a, .main-navigation .primary-menu > .current-menu-ancestor > a:hover, .main-navigation .primary-menu > .current-menu-ancestor > a:focus  {
-	border-top: 4px solid rgb(195,105,60);
-	color: rgb(195,105,60);
+	border-top: 4px solid var(--ligd-color-burntsienna);
+	color: var(--ligd-color-burntsienna);
 }
 
-h1, h2, h3, h4 {color: rgb(88,109,44)}
+h1, h2, h3, h4 {color: var(--ligd-color-spearmint)}
 
 #secondary .widget-title::after {
 	position: absolute;
@@ -1882,7 +1890,7 @@ h1, h2, h3, h4 {color: rgb(88,109,44)}
 	display: block;
 	height: 4px;
 	bottom: -15px;
-	background-color: rgb(88,109,44);
+	background-color: var(--ligd-color-spearmint);
 	content: "";
 }
 
@@ -1919,13 +1927,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* make entry headings use the color scheme color */ 
 .entry-header .entry-title  {
-    color:rgb(88,109,44);
+    color: var(--ligd-color-spearmint);
     font-weight: bolder;
     
 }
 
 .entry-header .entry-title a {
-    color:rgb(88,109,44);
+    color:var(--ligd-color-spearmint);
     font-weight: bolder;
     
 }
@@ -2023,4 +2031,44 @@ body, button, input, select, textarea {
     margin-bottom: 0px;
     float: left;
 
+}
+
+.main-navigation .navbar-text {
+    color: var(--ligd-color-green;)
+}
+.main-navigation .primary-menu > li > a {
+    border-top: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    color: var(--ligd-color-green);
+}
+
+.main-navigation .navbar-brand {
+    color: var(--ligd-color-green);
+}
+
+
+a {
+    color: var(--ligd-color-spearmint);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--ligd-color-spearmint);
+    
+}
+
+
+#secondary .widget {
+    background-color: white;
+    color: var(--ligd-color-spearmint);
+    font-size: 16px;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding: 24px 24px 24px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
 }
