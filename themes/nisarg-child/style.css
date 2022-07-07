@@ -1927,13 +1927,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* make entry headings use the color scheme color */ 
 .entry-header .entry-title  {
-    color: var(--ligd-color-spearmint);
+    color: var(--ligd-color-green);
     font-weight: bolder;
     
 }
 
 .entry-header .entry-title a {
-    color:var(--ligd-color-spearmint);
+    color:var(--ligd-color-green);
     font-weight: bolder;
     
 }
@@ -2048,12 +2048,12 @@ body, button, input, select, textarea {
 
 
 a {
-    color: var(--ligd-color-spearmint);
+    color: var(--ligd-color-green);
     text-decoration: none;
 }
 
 a:visited {
-    color: var(--ligd-color-spearmint);
+    color: var(--ligd-color-green);
     
 }
 
