@@ -2072,3 +2072,19 @@ a:visited {
     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
     -o-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
 }
+
+.entry-meta a {
+    clear: both;
+    color: var(--ligd-color-green);
+    text-transform: capitalize;
+    line-height: 1.7;
+}
+
+/* spoiler title */
+
+.su-spoiler-style-default>.su-spoiler-title {
+    padding-left: 27px;
+    padding-right: 0;
+    color: var(--ligd-color-green);
+    font-size: 16px;
+}
