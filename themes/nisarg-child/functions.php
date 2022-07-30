@@ -19,7 +19,11 @@ if ( ! function_exists( 'nisarg_posted_on' ) ) :
     
     $viewbyauthor_text = __( 'View all posts by', 'nisarg' ).' %s';
     
-    $entry_meta = '<i class="fa fa-calendar-o"></i> <a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s </time></a>';
+    if ( is_sticky() ) {
+        $entry_meta = '&nbsp;';
+    } else {
+        $entry_meta = '<i class="fa fa-calendar-o"></i> <a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s </time></a>';
+    }
     
         $entry_meta = sprintf($entry_meta,
             esc_url( get_permalink() ),
@@ -184,5 +188,7 @@ if ( ! function_exists( 'nisarg_posted_on' ) ) :
             <?php
         }
     endif; // nisarg_header_style
+
+
 
 ?>
