@@ -30,8 +30,9 @@
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
-			<h5 class="entry-date"><?php nisarg_posted_on(); ?></h5>
-		</div><!-- .entry-meta -->
+			<!-- <h5 class="entry-date"><?php nisarg_posted_on(); ?></h5> -->
+		</div>
+		<!-- .entry-meta -->
 		<?php endif; ?>
 		
 	</header><!-- .entry-header -->

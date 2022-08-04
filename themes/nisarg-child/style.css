@@ -1963,30 +1963,48 @@ body, button, input, select, textarea {
     .featured-image img {
         width: 100%;
     }
+    .entry-summary, .entry-content {
+        text-align: left;
+    }
 }
 @media (min-width: 360px) and (max-width: 767px ) {
     .featured-image img {
         width: 100%;
+    }
+    .entry-summary, .entry-content {
+        text-align: left;
     }
 }
 @media (min-width: 768px) and (max-width: 979px ) {
     .featured-image img {
         width: 100%;
     }
+    .entry-summary, .entry-content {
+        text-align: left;
+    }
 }
 @media (min-width: 980px) and (max-width: 1279px ){
     .featured-image img {
         width: 300px;
+    }
+    .entry-summary, .entry-content {
+        text-align: left;
     }
 }
 @media (min-width: 1280px) and (max-width: 1365px ){
     .featured-image img {
         width: 300px;
     }
+    .entry-summary, .entry-content {
+        text-align: left;
+    }
 }
 @media (min-width: 1366px) and (max-width: 1439px ){
     .featured-image img {
         width: 300px;
+    }
+    .entry-summary, .entry-content {
+        text-align: left;
     }
 }
 @media (min-width: 1440px) and (max-width: 1599px ) {
@@ -2088,3 +2106,10 @@ a:visited {
     color: var(--ligd-color-green);
     font-size: 18px;
 }
+
+/* Entry title less space underneath */
+.entry-header .entry-title {    
+    margin-bottom: 0px;
+}
+
+
