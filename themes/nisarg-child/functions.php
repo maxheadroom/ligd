@@ -1,4 +1,5 @@
 <?php
+
 /**
 * Child theme stylesheet einbinden in Abhängigkeit vom Original-Stylesheet
 */
@@ -9,6 +10,14 @@ wp_enqueue_style( 'child-theme-css', get_stylesheet_directory_uri() .'/style.css
 
 }
 add_action( 'wp_enqueue_scripts', 'child_theme_styles' );
+
+
+/* override loading google fonts */
+function nisarg_ligd_fonts() {
+	wp_enqueue_style( 'nisarggooglefonts', get_stylesheet_directory_uri() . '/ligdfonts.css' );
+}
+add_action( 'wp_enqueue_scripts', 'nisarg_ligd_fonts', 1 );
+
 
 
 if ( ! function_exists( 'nisarg_posted_on' ) ) :
