@@ -24,12 +24,6 @@
 				<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 			</h2>
 		<?php endif; // is_single() ?>
-
-		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
-			<h5 class="entry-date"><?php nisarg_posted_on(); ?></h5>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
 	</header><!-- .entry-header -->
 			<div class="entry-content">
 				<?php
@@ -45,6 +39,11 @@
 			</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
+	<?php if ( 'post' == get_post_type() ) : ?>
+		<div class="entry-meta">
+			<div class="entry-date">Beitrag erstellt am: <?php nisarg_footer_posted_on(); ?></div>
+		</div><!-- .entry-meta -->
+		<?php endif; ?>
 		<?php nisarg_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
