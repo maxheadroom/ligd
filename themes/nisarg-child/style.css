@@ -31,7 +31,7 @@ This theme is licensed under the GPL.
  *     3.2 Site Header
  * 4.0 Content
  *     4.1 Post-Content
- *     4.2 Page and Post Navigation links 
+ *     4.2 Page and Post Navigation links
  *     4.3 Post Formats
  *     4.4 Gallery
  *     4.5 Post-Comments
@@ -41,7 +41,7 @@ This theme is licensed under the GPL.
  * 8.0 Print
  * 9.0 Jetpack Infinite Scroll
  * 10.0 Gutenberg
- *     
+ *
 **/
 
 /* Define LIGD Color Scheme "Bowlful of Oranges" color variables */
@@ -136,7 +136,7 @@ blockquote p{
 }
 
 code {
-    white-space: normal;   
+    white-space: normal;
     color: #666;
 }
 
@@ -163,7 +163,7 @@ table,th,td{
 th, td {
   padding: 0.7em;
   text-align: left;
- 
+
 }
 
 tbody tr:nth-child(odd) {
@@ -431,7 +431,7 @@ a img.aligncenter {
     padding: 0 4px 5px;
 }
 
-.size-auto, 
+.size-auto,
 .size-full,
 .size-large,
 .size-medium,
@@ -452,7 +452,7 @@ img[class*="wp-image-"] {
     max-width: 100%;
     height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
 }
- 
+
 .entry-content img,
 img.size-full {
     max-width: 100%;
@@ -517,12 +517,12 @@ img.wp-post-image{
 
 .admin-bar .navbar-fixed-top {
   top: 32px; }
-  
+
 @media (max-width: 782px) {
     .admin-bar .navbar-fixed-top{
     top: 46px;
     position: absolute;
-  } 
+  }
 }
 .navbar-brand{
     font-size: 20px;
@@ -795,7 +795,7 @@ img.wp-post-image{
         border: 1px solid #ccc;
         border-radius: 4px;
         border-top-left-radius: 0;
-        border-top-right-radius: 0; 
+        border-top-right-radius: 0;
         -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
         box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     }
@@ -854,14 +854,14 @@ img.wp-post-image{
     -webkit-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
-    text-align: center;  
+    text-align: center;
 }
 
 .site-title {
     color: #fff;
     font-size: 3.5em;
     font-weight: 700;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     letter-spacing: 10px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -909,7 +909,7 @@ img.wp-post-image{
  */
 
  .sticky {
-    
+
 }
 
 .sticky-post{
@@ -926,7 +926,7 @@ img.wp-post-image{
     background-color: white;
     clear: both;
     margin-bottom: 2em;
-    
+
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
@@ -951,7 +951,7 @@ img.wp-post-image{
     overflow: hidden;
 }
 
-.post-comments{  
+.post-comments{
     border-radius: 0px;
     border: none;
     padding: 2em;
@@ -1119,8 +1119,8 @@ img.wp-post-image{
     text-align: left;
 }
 
-/* 
-* 4.2 Page and Post Navigation links 
+/*
+* 4.2 Page and Post Navigation links
 * --------------------------------------------------------------
 */
 
@@ -1232,15 +1232,15 @@ img.wp-post-image{
 /* Post Format = Status----------------------------------------------- */
 
 .blog .format-status .entry-content,
-.archive .format-staus .entry-content{ 
-    background-color: #CFD8DC;  
+.archive .format-staus .entry-content{
+    background-color: #CFD8DC;
     padding-top: 2em;
     font-size: 16px;
 }
 
 .blog .format-status .entry-footer,
-.archive .format-staus .entry-footer{ 
-    background-color: #CFD8DC;  
+.archive .format-staus .entry-footer{
+    background-color: #CFD8DC;
 }
 
 /*
@@ -1376,8 +1376,8 @@ img.wp-post-image{
     color: #aaa;
 }
 
-.bypostauthor {  
- 
+.bypostauthor {
+
 }
 .no-results, .not-found {
     background: #fff;
@@ -1569,7 +1569,7 @@ img.wp-post-image{
     h6{
         font-size: 12px;
     }
-    
+
     blockquote{
         margin-left: 0.3em;
     }
@@ -1585,7 +1585,7 @@ img.wp-post-image{
     .sticky-post{
         padding: 3px 15px;
     }
-    
+
     .entry-header,.entry-content,.entry-summary,.entry-footer{
         padding: 1em 1.5em;
     }
@@ -1648,7 +1648,7 @@ img.wp-post-image{
 
     .site-title {
         font-size: 2em;
-        letter-spacing: 10px;  
+        letter-spacing: 10px;
     }
 
     .site-title::after{
@@ -1662,7 +1662,7 @@ img.wp-post-image{
 
     .site-description {
         font-size: 14px;
-        letter-spacing: 1px; 
+        letter-spacing: 1px;
     }
 
     .site-footer{
@@ -1670,7 +1670,7 @@ img.wp-post-image{
     }
     .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
         border-top: none;
-    }    
+    }
 }
 @media (max-width: 359px) {
     .site-header{
@@ -1682,7 +1682,7 @@ img.wp-post-image{
 
     .site-title {
         font-size: 1.5em;
-        letter-spacing: 2px;  
+        letter-spacing: 2px;
         margin-top: 5px;
         margin-bottom: 3px;
     }
@@ -1713,7 +1713,7 @@ img.wp-post-image{
         font-size: 10pt;
     }
 
-    
+
     .site {
         max-width: 98%;
     }
@@ -1830,12 +1830,12 @@ img.wp-post-image{
      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
-    -o-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15); 
+    -o-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
     padding:10px  15px !important;
 }
 
-#infinite-handle span button, 
-#infinite-handle span button:hover, 
+#infinite-handle span button,
+#infinite-handle span button:hover,
 #infinite-handle span button:focus {
     font-size: 18px;
     text-transform: capitalize;
@@ -1927,17 +1927,17 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
 }
 
-/* make entry headings use the color scheme color */ 
+/* make entry headings use the color scheme color */
 .entry-header .entry-title  {
     color: var(--ligd-color-green);
     font-weight: bolder;
-    
+
 }
 
 .entry-header .entry-title a {
     color:var(--ligd-color-green);
     font-weight: bolder;
-    
+
 }
 /* hide the sticky post marker */
 .sticky-post {
@@ -1959,7 +1959,7 @@ body, button, input, select, textarea {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* position the featured image and make it thumbnail */ 
+/* position the featured image and make it thumbnail */
 
 @media (min-width: 320px) and (max-width: 359px ) {
     .featured-image img {
@@ -2037,11 +2037,11 @@ body, button, input, select, textarea {
 
 .featured-image  {
     padding: 0px;
-   
+
 
 }
 .featured-image img {
-    
+
     padding: 0px 13px 0px 0px;
     height: auto;
     display: flow-root;
@@ -2074,7 +2074,7 @@ a {
 
 a:visited {
     color: var(--ligd-color-green);
-    
+
 }
 
 
@@ -2114,8 +2114,20 @@ a:visited {
     clear: both;
     color: #727272;
     text-transform: none;
-    font-weight: 100; 
+    font-weight: 100;
     font-size: 16px;
     letter-spacing: normal;
     word-spacing: normal;
+}
+
+/* Advents Tuerchen Rahmen */
+
+
+.adventstuer {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.adventstuer:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
