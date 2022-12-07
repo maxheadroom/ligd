@@ -2140,6 +2140,12 @@ a:visited {
 
 }
 
+figcaption.adventimage  { 
+    position: absolute; bottom: 0;
+    background: rgba(0,0,0,0.4);
+    color: #fff; width: 100%;
+    font-size: 2rem; padding: .6rem; 
+  }
 
 .adventreihe {
     margin-bottom: -15px;
