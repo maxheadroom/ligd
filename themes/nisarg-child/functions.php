@@ -60,11 +60,9 @@ if ( ! function_exists( 'nisarg_posted_on' ) ) :
         
         $viewbyauthor_text = __( 'View all posts by', 'nisarg' ).' %s';
         
-        if ( is_sticky() ) {
-            $entry_meta = '&nbsp;';
-        } else {
-            $entry_meta = '<time class="entry-date" datetime="%3$s" pubdate>%4$s </time>';
-        }
+      
+
+            $entry_meta = '<time class="entry-date" datetime="%3$s" pubdate>%4$s von %7$s</time>';
         
             $entry_meta = sprintf($entry_meta,
                 esc_url( get_permalink() ),
