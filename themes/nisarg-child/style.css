@@ -2120,9 +2120,19 @@ a:visited {
     word-spacing: normal;
 }
 
+/*  date entry on the read more link */
+.read-more-date  {
+ 
+
+    font-weight: 100;
+    font-size: 10px;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+
+
 /* Advents Tuerchen Rahmen */
-
-
 .adventstuer img {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
    transition: all 0.3s cubic-bezier(.25,.8,.25,1);

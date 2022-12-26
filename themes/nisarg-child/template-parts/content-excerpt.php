@@ -28,9 +28,9 @@
 			</h2>
 		<?php endif; // is_single() ?>
 
-		<?php if ( 'post' == get_post_type() ) : ?>
+		<?php if ( 'post' == get_post_type() && ! is_sticky() ) : ?>
 		<div class="entry-meta">
-			<!-- <h5 class="entry-date"><?php nisarg_posted_on(); ?></h5> -->
+			 <!-- <h5 class="entry-date">veröffentlicht am <?php nisarg_posted_on(); ?></h5> -->
 		</div>
 		<!-- .entry-meta -->
 		<?php endif; ?>
