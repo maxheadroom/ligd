@@ -2150,6 +2150,12 @@ a:visited {
 
 }
 
+.adventskalender2023 {
+    padding-left: 9px;
+    background-color: rgb(172,49,41);
+
+}
+
  .wp-block-gallery.has-nested-images figure.wp-block-image figcaption { 
     position: absolute; bottom: 0;
     background: rgba(0,0,0,0.4);
